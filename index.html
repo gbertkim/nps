@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National State Parks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 role="heading">National Parks by State</h1>
+    <p>*Use a single space to separate state abbreviations</p>
+    <form id="parkForm" role="form" id="js-form">
+      <label for="search-park">Search for Park</label>
+      <input type="text" name="search-term" id="js-search-term" placeholder="State Abbreviations" minlength="2" required>
+      <label for="max-results">Maximum results to return</label>
+      <input type="number" name="max-results" id="js-max-results" value="10">
+      <input type="submit" value="Search">
+    </form>
+  </div>
+  <p role="paragraph" id="errorMessage"></p>
+  <section role="section" id="resultsContainer">
+    <ul id="parksList"></ul>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

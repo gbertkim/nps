@@ -1,0 +1,1 @@
+This app looks through the National Park Services API to provide the user with parks in a given state.
